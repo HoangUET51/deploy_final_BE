@@ -11,6 +11,8 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 //config cors
 configCors(app);
+//heroku config:set NPM_CONFIG_PRODUCTION=false
+//heroku logs --tail
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
